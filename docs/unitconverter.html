@@ -3,6 +3,7 @@
 
 <head>
     <title>Canada Eh! | Unit Converter</title>
+<meta charset="utf-8" />
 
 <body bgcolor="#eb3f25">
     <font color="black">
@@ -35,7 +36,7 @@
             <h3>Unit Converter</h3>
         </body>
     
-        <script>
+        <script> // Converts Miles to Kilometers
             function milesToKilometers(value) {
                 var mileValue;
                 document.getElementById("kilometerValue").innerHTML = (value/.609).toFixed(2);
@@ -45,6 +46,18 @@
         <script> // Converts Fahrenheit Temperatures to Celsius
             function fToC(value) {
                 document.getElementById("celsiusValue").innerHTML = (((value - 32) * 5) / 9).toFixed(2);
+            }
+        </script>
+
+        <script> // Converts Gallons to Liters
+            function galToL(value) {
+            document.getElementById("literValue").innerHTML = (value * 3.785).toFixed(2);
+            }
+        </script>
+
+        <script> // Converts Pounds to Kilograms
+            function poundsToKilograms(value) {
+                document.getElementById("kilogramValue").innerHTML = (value / 2.205).toFixed(2);
             }
         </script>
 
@@ -71,13 +84,32 @@
         <body>
             <h3>Fahrenheit to Celsius</h3>
             <p>Enter temperature in Fahrenheit: </p>
-            <input id="fahValue" type="number" placeHolder="degrees"
+            <input id="fahValue" type="number" placeHolder="Degrees Fahrenheit"
             oninput="fToC(Number(fahValue.value))"
             onchange="fToC(Number(fahValue.value))">
 
             <p>The temperature is <span id="celsiusValue"></span></span> degrees Celsius.</p>
         </body>
 
+        <body>
+            <h3>Gallons to Liters</h3>
+            <p>Enter a number in gallons: </p>
+            <input id="gallonValue" type="number" placeHolder="Gallons"
+            oninput="galToL(Number(gallonValue.value))"
+            onchange="galToL(Number(gallonValue.value))">
+
+            <p>This is <span id="literValue"></span></span> liters.</p>
+        </body>
+
+        <body>
+            <h3>Pounds to Kilograms</h3>
+            <p>Enter amount in pounds: </p>
+            <input id="poundValue" type="number" placeHolder="Pounds"
+            oninput="poundsToKilograms(Number(poundValue.value))"
+            onchange="poundsToKilograms(Number(poundValue.value))">
+        
+            <p>This is <span id="kilogramValue"></span></span> kilograms.</p>
+        </body>
 
         <footer>
             <p>Canada Eh! is intended to provide useful information alongside entertaining jokes.</p>
