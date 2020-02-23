@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Canada Eh! | Unit Converter</title>
+
+<body bgcolor="red">
+    <font color="black">
+        </head>
+
+        <style>
+            body {
+                background-image: url('Canada.jpg');
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-position: center;
+                background opacity=0.5;
+                align= "middle">
+            }
+        </style>
+
+        <body>
+            <div>
+                <h1>Canada Eh!</h1>
+                <h2> Developed by: Colin Russell</h2>
+                <p>A showcase of Canadian information and entertainment. </p>
+            </div>
+        </body>
+
+        <body>
+            <button><a href="canadaeh.html"> Home</a></button>
+            <button><a href="memes.html"> Memes</a></button>
+            <button><a href="unitconverter.html"> Unit Converter</a></button>
+            <button><a href="sources.html"> Sources</a></button>
+
+            <h3>Unit Converter</h3>
+        </body>
+    
+        <script>
+            function milesToKilometers(value) {
+                var mileValue;
+                document.getElementById("kilometerValue").innerHTML = (value/.609).toFixed(2);
+            }
+        </script>
+
+        <script> // Converts Fahrenheit Temperatures to Celsius
+            function fToC(value) {
+                document.getElementById("celsiusValue").innerHTML = (((value - 32) * 5) / 9).toFixed(2);
+            }
+        </script>
+
+        <body>
+            <p>In Canada, the metric system is used.</p>
+            <p>This means that temperature is measured in Celsius, distances are in meters, and mass is in grams</p>
+            <p> <br> Use this converter as a guide</p>
+
+        </body>
+
+        <body>
+        <h3>Miles to Kilometers</h3>
+            <p>Enter a value in miles: </p>
+            <input id = "mileValue"
+            type = "number"
+            placeHolder = "Miles"
+            oninput = "milesToKilometers(Number(mileValue.value))"
+            onchange = "milesToKilometers(Number(mileValue.value))">
+
+            <p>The kilometer value is <span id = "kilometerValue" ></span></span> km.</p>    
+        </body>
+            
+        </body>
+        <body>
+            <h3>Fahrenheit to Celsius</h3>
+            <p>Enter temperature in Fahrenheit: </p>
+            <input id="fahValue" type="number" placeHolder="degrees"
+            oninput="fToC(Number(fahValue.value))"
+            onchange="fToC(Number(fahValue.value))">
+
+            <p>The temperature is <span id="celsiusValue"></span></span> degrees Celsius.</p>
+        </body>
+
+
+        <footer>
+            <p>Canada Eh! is intended to provide useful information alongside entertaining jokes.</p>
+            <p>Copyright &copy; 2020 Colin Russell</p>
+        </footer>
+
+</html>
