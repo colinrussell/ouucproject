@@ -1,0 +1,38 @@
+body{
+    background-color: "#eb3f25";
+    background-image: url('Canada.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+nav{
+    width: 100%;
+    background:darkgrey;
+    overflow:auto;
+}
+ul{
+    padding:0;
+    margin: 0 0 0 175px;
+    list-style:none;
+}
+li{
+    float:left;
+}
+.logo img{
+    position: absolute;
+    margin-top: 15px;
+    margin-left:10px;
+}
+nav a{
+    width:100px;
+    display:block;
+    padding: 20px 15px;
+    text-decoration: none;
+    font-family: 'Times New Roman';
+    color:whitesmoke;
+    text-align: center;
+}
+nav a:hover{
+    background:red;
+    transition: 0.5s;
+}

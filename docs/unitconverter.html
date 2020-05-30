@@ -1,120 +1,106 @@
 <!DOCTYPE html>
 <html>
+    <head>
+        <meta charset="utf-8">
+        <title>Canada Eh! | Unit Converter</title>
+        <link href="style.css" rel="stylesheet" />
 
-<head>
-    <title>Canada Eh! | Unit Converter</title>
-<meta charset="utf-8" />
-
-<body bgcolor="#eb3f25">
-    <font color="black">
-        </head>
-
-        <style>
-            body {
-                background-image: url('Canada.jpg');
-                background-repeat: no-repeat;
-                background-attachment: fixed;
-                background-position: center;
-                background opacity=0.5;
-            }
-        </style>
-
-<body>
-    <div>
-        <img src="CanadaEhLogoSlim.jpg" width="320" height="100" alt="Maple syrup" </div>
-        <h2> Developed by: Colin Russell</h2>
-        <p>A showcase of Canadian information and entertainment. </p>
-        <p>Find useful conversion tools as well as jokes here!</p>
-    </div>
-</body>
-
-        <body>
-            <button><a href="index.html"> Home</a></button>
-            <button><a href="memes.html"> Memes</a></button>
-            <button><a href="unitconverter.html"> Unit Converter</a></button>
-            <button><a href="sources.html"> Sources</a></button>
-
-            <h3>Unit Converter</h3>
-        </body>
-    
-        <script> // Converts Miles to Kilometers
-            function milesToKilometers(value) {
-                var mileValue;
-                document.getElementById("kilometerValue").innerHTML = (value/.609).toFixed(2);
-            }
-        </script>
-
-        <script> // Converts Fahrenheit Temperatures to Celsius
-            function fToC(value) {
-                document.getElementById("celsiusValue").innerHTML = (((value - 32) * 5) / 9).toFixed(2);
-            }
-        </script>
-
-        <script> // Converts Gallons to Liters
-            function galToL(value) {
-            document.getElementById("literValue").innerHTML = (value * 3.785).toFixed(2);
-            }
-        </script>
-
-        <script> // Converts Pounds to Kilograms
-            function poundsToKilograms(value) {
-                document.getElementById("kilogramValue").innerHTML = (value / 2.205).toFixed(2);
-            }
-        </script>
-
-        <body>
-            <p>In Canada, the metric system is used.</p>
-            <p>Distance is measured in kilometers, temperature is measured in Celsius,<br>liters are used for measuring liquids, and mass is measured in kilograms.</p>
-            <p> <br> Use this converter as a guide</p>
-
-        </body>
-
-        <body>
-        <h3>Miles to Kilometers</h3>
-            <p>Enter a value in miles: </p>
-            <input id = "mileValue"
-            type = "number"
-            placeHolder = "Miles"
-            oninput = "milesToKilometers(Number(mileValue.value))"
-            onchange = "milesToKilometers(Number(mileValue.value))">
-
-            <p>The kilometer value is <span id = "kilometerValue" ></span></span> km.</p>    
-        </body>
-            
-        </body>
-        <body>
-            <h3>Fahrenheit to Celsius</h3>
-            <p>Enter temperature in Fahrenheit: </p>
-            <input id="fahValue" type="number" placeHolder="Degrees Fahrenheit"
-            oninput="fToC(Number(fahValue.value))"
-            onchange="fToC(Number(fahValue.value))">
-
-            <p>The temperature is <span id="celsiusValue"></span></span> degrees Celsius.</p>
-        </body>
-
-        <body>
-            <h3>Gallons to Liters</h3>
-            <p>Enter a number in gallons: </p>
-            <input id="gallonValue" type="number" placeHolder="Gallons"
-            oninput="galToL(Number(gallonValue.value))"
-            onchange="galToL(Number(gallonValue.value))">
-
-            <p>This is <span id="literValue"></span></span> liters.</p>
-        </body>
-
-        <body>
-            <h3>Pounds to Kilograms</h3>
-            <p>Enter amount in pounds: </p>
-            <input id="poundValue" type="number" placeHolder="Pounds"
-            oninput="poundsToKilograms(Number(poundValue.value))"
-            onchange="poundsToKilograms(Number(poundValue.value))">
+    <body bgcolor="#eb3f25">
+        <div class="logo">
+            <img src="logo.jpg" width="100px"></a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html"> Home</a></li>
+                <li><a href="memes.html"> Memes</a></li>
+                <li><a href="unitconverter.html"> Unit Converter</a></li>
+                <li><a href="sources.html"> Sources</a></li>
+            </ul>
+        </nav>
+        <p>
+        <h3>This site was developed by Colin Russell for the RevolutionUC Hackathon.</h3>
+        <h4><a href="https://devpost.com/software/canada-eh-a-site-for-information-and-entertainment#updates">Click here for
+                info about the project.</a></h4>
+        CanadaEh is a showcase of Canadian information and entertainment.
+        Find useful conversion tools as well as comedy here!
+        </p>
         
-            <p>This is <span id="kilogramValue"></span></span> kilograms.</p>
-        </body>
+            <script> // Converts Miles to Kilometers
+                function milesToKilometers(value) {
+                    var mileValue;
+                    document.getElementById("kilometerValue").innerHTML = (value/.609).toFixed(2);
+                }
+            </script>
 
-        <footer>
-            <p>Canada Eh! is intended to provide useful information alongside entertaining jokes.</p>
-            <p>Copyright &copy; 2020 Colin Russell</p>
-        </footer>
+            <script> // Converts Fahrenheit Temperatures to Celsius
+                function fToC(value) {
+                    document.getElementById("celsiusValue").innerHTML = (((value - 32) * 5) / 9).toFixed(2);
+                }
+            </script>
+
+            <script> // Converts Gallons to Liters
+                function galToL(value) {
+                document.getElementById("literValue").innerHTML = (value * 3.785).toFixed(2);
+                }
+            </script>
+
+            <script> // Converts Pounds to Kilograms
+                function poundsToKilograms(value) {
+                    document.getElementById("kilogramValue").innerHTML = (value / 2.205).toFixed(2);
+                }
+            </script>
+            <div>
+                <p>In Canada, the metric system is used.</p>
+                <p>Distance is measured in kilometers, temperature is measured in Celsius,<br>liters are used for measuring liquids, and mass is measured in kilograms.</p>
+                <p> <br> Use this converter as a guide</p>
+            </div>
+
+            <div>
+            <h3>Miles to Kilometers</h3>
+                <p>Enter a value in miles: </p>
+                <input id = "mileValue"
+                type = "number"
+                placeHolder = "Miles"
+                oninput = "milesToKilometers(Number(mileValue.value))"
+                onchange = "milesToKilometers(Number(mileValue.value))">
+
+                <p>The kilometer value is <span id = "kilometerValue" ></span></span> km.</p>    
+            </div>
+                
+            <div>
+                <h3>Fahrenheit to Celsius</h3>
+                <p>Enter temperature in Fahrenheit: </p>
+                <input id="fahValue" type="number" placeHolder="Degrees Fahrenheit"
+                oninput="fToC(Number(fahValue.value))"
+                onchange="fToC(Number(fahValue.value))">
+
+                <p>The temperature is <span id="celsiusValue"></span></span> degrees Celsius.</p>
+            </div>
+
+            <div>
+                <h3>Gallons to Liters</h3>
+                <p>Enter a number in gallons: </p>
+                <input id="gallonValue" type="number" placeHolder="Gallons"
+                oninput="galToL(Number(gallonValue.value))"
+                onchange="galToL(Number(gallonValue.value))">
+
+                <p>This is <span id="literValue"></span></span> liters.</p>
+            </div>
+
+            <div>
+                <h3>Pounds to Kilograms</h3>
+                <p>Enter amount in pounds: </p>
+                <input id="poundValue" type="number" placeHolder="Pounds"
+                oninput="poundsToKilograms(Number(poundValue.value))"
+                onchange="poundsToKilograms(Number(poundValue.value))">
+            
+                <p>This is <span id="kilogramValue"></span></span> kilograms.</p>
+            </div>
+    </body>
+
+    <footer>
+        <p>Canada Eh! is intended to provide useful information alongside entertaining jokes.</p>
+        <p>Copyright &copy; 2020 Colin Russell</p>
+    </footer>
 
 </html>
